@@ -10,6 +10,7 @@ export class QaController {
         'User can search products by product name',
         'User can sort products by price ascending and descending',
         'User can add products to cart and checkout',
+        'User cannot order more products than are in stock.',
         'Coupon SAVE10 should discount 10% of subtotal',
         'Phone number should be exactly 10 digits before checkout success'
       ],
@@ -41,11 +42,11 @@ export class QaController {
         }
       ],
       bugHints: [
-        'ลองพิมพ์ค้นหาสินค้าแบบพิมพ์เล็กและพิมพ์ใหญ่',
-        'ลองคิดเลข total เมื่อใช้ coupon SAVE10',
-        'ลองเพิ่มสินค้าที่ stock น้อยหลายครั้ง',
-        'ลองเช็กการเรียงราคาสินค้า 12, 20, 100',
-        'ลอง checkout ด้วยเบอร์โทร 9 หลัก'
+        // 'ลองพิมพ์ค้นหาสินค้าแบบพิมพ์เล็กและพิมพ์ใหญ่',
+        // 'ลองคิดเลข total เมื่อใช้ coupon SAVE10',
+        // 'ลองเพิ่มสินค้าที่ stock น้อยหลายครั้ง',
+        // 'ลองเช็กการเรียงราคาสินค้า 12, 20, 100',
+        // 'ลอง checkout ด้วยเบอร์โทร 9 หลัก'
       ]
     }
   }

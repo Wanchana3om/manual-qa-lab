@@ -57,6 +57,10 @@ button, input, select {
   opacity: 1;
 }
 
+.nav-action-end {
+  margin-left: auto;
+}
+
 .card {
   background: white;
   border-radius: 16px;

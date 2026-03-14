@@ -27,7 +27,7 @@ export function NavBar({ isLoggedIn }: NavBarProps) {
           <Link href="/shop">Shop</Link>
           <Link href="/orders">Orders</Link>
           <Link href="/qa-challenge">QA Challenge</Link>
-          <button className="nav-action" type="button" onClick={onLogout}>Logout</button>
+          <button className="nav-action nav-action-end" type="button" onClick={onLogout}>Logout</button>
         </>
       ) : (
         <Link href="/login">Login</Link>
