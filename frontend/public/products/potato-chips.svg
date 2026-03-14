@@ -1,0 +1,9 @@
+<svg width="480" height="320" viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="320" rx="32" fill="#FFF7D6"/>
+  <path d="M178 54H302L286 266H194L178 54Z" fill="#DC2626"/>
+  <rect x="194" y="76" width="92" height="38" rx="12" fill="#FDE68A"/>
+  <ellipse cx="240" cy="170" rx="44" ry="34" fill="#FEF3C7"/>
+  <ellipse cx="220" cy="158" rx="18" ry="12" fill="#FCD34D"/>
+  <ellipse cx="254" cy="183" rx="20" ry="13" fill="#FBBF24"/>
+  <text x="240" y="244" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFF7ED">CHIPS</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg width="480" height="320" viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="320" rx="32" fill="#ECFCCB"/>
+  <circle cx="384" cy="84" r="50" fill="#BBF7D0"/>
+  <path d="M242 89C293 89 332 129 332 188C332 241 293 270 242 270C191 270 152 241 152 188C152 129 191 89 242 89Z" fill="#EF4444"/>
+  <path d="M236 69C244 46 263 33 284 35C267 46 257 58 253 79L236 69Z" fill="#65A30D"/>
+  <path d="M249 79C267 58 289 54 309 63C288 70 272 80 260 96L249 79Z" fill="#86EFAC"/>
+  <text x="242" y="206" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#FFF7ED">APPLE</text>
+</svg>

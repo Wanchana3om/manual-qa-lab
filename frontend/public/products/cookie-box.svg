@@ -1,0 +1,12 @@
+<svg width="480" height="320" viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="320" rx="32" fill="#FDF2E8"/>
+  <rect x="142" y="92" width="196" height="146" rx="24" fill="#B45309"/>
+  <rect x="158" y="74" width="164" height="40" rx="16" fill="#F59E0B"/>
+  <circle cx="206" cy="168" r="30" fill="#FCD34D"/>
+  <circle cx="274" cy="168" r="30" fill="#FCD34D"/>
+  <circle cx="206" cy="168" r="5" fill="#7C2D12"/>
+  <circle cx="286" cy="156" r="5" fill="#7C2D12"/>
+  <circle cx="194" cy="182" r="5" fill="#7C2D12"/>
+  <circle cx="264" cy="182" r="5" fill="#7C2D12"/>
+  <text x="240" y="262" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#9A3412">COOKIE BOX</text>
+</svg>

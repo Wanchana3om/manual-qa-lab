@@ -1,0 +1,8 @@
+<svg width="480" height="320" viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="320" rx="32" fill="#F7FEE7"/>
+  <circle cx="100" cy="84" r="52" fill="#BEF264"/>
+  <path d="M151 195C214 262 320 246 372 150C324 176 254 176 178 118C148 143 138 174 151 195Z" fill="#FACC15"/>
+  <path d="M164 184C214 226 295 218 348 150C306 165 252 162 194 118C171 137 156 169 164 184Z" fill="#FDE047"/>
+  <rect x="336" y="137" width="14" height="22" rx="4" transform="rotate(28 336 137)" fill="#854D0E"/>
+  <text x="240" y="270" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#4D7C0F">BANANA</text>
+</svg>

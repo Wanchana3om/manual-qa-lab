@@ -19,6 +19,7 @@ export type Product = {
   price: number
   stock: number
   rating: number
+  imageUrl: string
 }
 
 export type CartItem = {
