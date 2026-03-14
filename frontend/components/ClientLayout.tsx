@@ -3,10 +3,14 @@
 import { PropsWithChildren } from 'react'
 import { NavBar } from './NavBar'
 
-export function ClientLayout({ children }: PropsWithChildren) {
+type ClientLayoutProps = PropsWithChildren<{
+  isLoggedIn: boolean
+}>
+
+export function ClientLayout({ children, isLoggedIn }: ClientLayoutProps) {
   return (
     <>
-      <NavBar />
+      <NavBar isLoggedIn={isLoggedIn} />
       <main className="container">{children}</main>
     </>
   )

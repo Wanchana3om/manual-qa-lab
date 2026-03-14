@@ -1,9 +1,13 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { login } from '@/lib/api'
+import { AUTH_COOKIE_NAME, AUTH_COOKIE_VALUE } from '@/lib/auth'
 
 export default function LoginPage() {
+  const router = useRouter()
+  const searchParams = useSearchParams()
   const [username, setUsername] = useState('tester')
   const [password, setPassword] = useState('1234')
   const [message, setMessage] = useState('')
@@ -15,7 +19,10 @@ export default function LoginPage() {
     try {
       const data = await login(username, password)
       localStorage.setItem('qa-user', JSON.stringify(data))
+      document.cookie = `${AUTH_COOKIE_NAME}=${AUTH_COOKIE_VALUE}; path=/; max-age=604800; samesite=lax`
       setMessage(`Login success: ${data.displayName}`)
+      router.push(searchParams.get('next') || '/shop')
+      router.refresh()
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Login failed')
     }

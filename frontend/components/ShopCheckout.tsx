@@ -75,6 +75,11 @@ export function ShopCheckout() {
   const subtotal = useMemo(() => cartDetail.reduce((sum, item) => sum + item.subtotal, 0), [cartDetail])
   const discount = useMemo(() => calculateDiscount(subtotal, couponCode), [couponCode, subtotal])
   const estimatedTotal = Math.max(subtotal - discount, 0)
+  const phoneInvalid = message === 'Phone number invalid'
+  const stockExceeded = message.includes('quantity exceeds stock')
+  const checkoutNotice = phoneInvalid || stockExceeded
+    ? message
+    : 'ลองทดสอบกรณี phone ไม่ครบ 10 หลัก, coupon ผิด, cart ว่าง, quantity เกิน stock'
 
   const syncCart = (next: CartItem[]) => {
     setCart(next)
@@ -246,8 +251,8 @@ export function ShopCheckout() {
               <button className="btn" onClick={onCheckout}>Checkout</button>
             </div>
 
-            <div style={{ marginTop: 16 }} className="notice">
-              ลองทดสอบกรณี phone ไม่ครบ 10 หลัก, coupon ผิด, cart ว่าง, quantity เกิน stock
+            <div style={{ marginTop: 16 }} className={phoneInvalid || stockExceeded ? 'notice error-notice' : 'notice'}>
+              {checkoutNotice}
             </div>
           </div>
         </div>
